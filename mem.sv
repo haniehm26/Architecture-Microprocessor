@@ -5,7 +5,7 @@ module mem(input  logic        clk, we,
   logic [31:0] RAM[63:0];
 
   initial
-      $readmemh("cmpmemfile.dat",RAM);
+      $readmemh("mainmemfile.dat",RAM);
 
   assign rd = RAM[a[31:2]]; // word aligned
 
